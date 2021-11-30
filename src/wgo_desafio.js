@@ -21,7 +21,7 @@ const call = (from, to, token) => request.post(route('/composto'))
             {
                 acao: 'audio',
                 acao_dados: {
-                    url_audio: 'https://github.com/mariogalvao/wgo-desafio/raw/wgo-desafio/resources/wgo-desafio.mp3'
+                    url_audio: 'https://github.com/mariogalvao/wgo-desafio/raw/master/resources/wgo-desafio.mp3'
                 }
             }
         ],
