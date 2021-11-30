@@ -16,7 +16,7 @@ Por exemplo, eu posso fazer uma chamada para em amigo, simulando que a mãe dele
 
 Utilizamos a API de chamadas da *TotalVoice*. Você precisa criar uma conta
 para poder utilizar. Quando você cria uma conta, você obtém, gratuitamente, para
-fins de testes, R$ 3,00 para utilizar. Cada chamada debita R$ 0,35.
+fins de testes, R$ 10,00 para utilizar. Cada chamada debita R$ 0,35.
 
 [Clique aqui para criar sua conta](https://api2.totalvoice.com.br/painel/signup.php)
 
