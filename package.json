@@ -1,13 +1,13 @@
 {
   "name": "wgo-desafio",
   "version": "0.1.2",
-  "description": "Uma aplicação de linha de comando que liga para alguém tocando o gemidão do Zap",
+  "description": "Uma aplicação de linha de comando que liga para alguém tocando um áudio gravado.",
   "bin": {
     "wgo-desafio": "./dist/cli.js"
   },
   "main": "dist/index.js",
-  "repository": "https://github.com/haskellcamargo/wgo-desafio.git",
-  "author": "Marcelo Camargo <marcelocamargo@linuxmail.org>",
+  "repository": "https://github.com/mariogalvao/wgo-desafio.git",
+  "author": "Marrio Galvão <mcasarigalvao@gmail.com>",
   "license": "MIT",
   "scripts": {
     "build": "babel ./src -d ./dist",

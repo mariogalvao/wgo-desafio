@@ -5,13 +5,12 @@ import promisifyAgent from 'superagent-promise';
 const request = promisifyAgent(agent, Bluebird);
 const route = path => `https://api.totalvoice.com.br${path}`;
 
-const gemidaoInText = 'OOOWH AHHHWN WOOOO AAAAHN WAAAAA AAAAAAHN ANN WAAA!\n'
-    + 'Voce caiu no gemidao do zap';
+const smsText = 'Acaboooooouuu.. é tetraaaaaaaaaaaa!!!';
 
 const sms = (to, token) => request.post(route('/sms'))
     .set('Access-Token', token)
     .set('Accept', 'application/json')
-    .send({ numero_destino: to, mensagem: gemidaoInText });
+    .send({ numero_destino: to, mensagem: smsText });
 
 const call = (from, to, token) => request.post(route('/composto'))
     .set('Access-Token', token)
@@ -22,14 +21,14 @@ const call = (from, to, token) => request.post(route('/composto'))
             {
                 acao: 'audio',
                 acao_dados: {
-                    url_audio: 'https://github.com/haskellcamargo/wgo-desafio/raw/master/resources/wgo-desafio.mp3'
+                    url_audio: 'https://github.com/mariogalvao/wgo-desafio/raw/master/resources/wgo-desafio.mp3'
                 }
             }
         ],
         bina: from
     });
 
-export default function gemidao(args) {
+export default function wgo_desafio(args) {
     if (!/^[a-f0-9]{32}$/.test(args.token)) {
         return reject(new Error('Token inválido. Obtenha um em https://totalvoice.com.br'));
     }

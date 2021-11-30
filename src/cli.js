@@ -3,13 +3,13 @@
 import yargs from 'yargs';
 import { green, red } from 'colors/safe';
 import { pipe, prop } from 'ramda';
-import gemidao from './gemidao';
+import wgo_desafio from './wgo_desafio';
 
 const emitSuccess = message => console.log(green(` ✔ Sucesso: ${message}`));
 const emitError = message => console.log(red(` ✗ Erro: ${message}`));
 
 function cli(args) {
-    gemidao(args)
+    wgo_desafio(args)
         .then(() => {
             emitSuccess(args.sms ? 'sms enviado!' : 'chamada efetuada!');
         })
@@ -17,7 +17,7 @@ function cli(args) {
 }
 
 cli(yargs
-    .usage('Uso: wgo-desafio --de=<de> --para=<para>')
+    .usage('Uso: wgo_desafio --de=<de> --para=<para>')
     .option('token', {
         describe: 'Token do TotalVoice',
         type: 'string'
