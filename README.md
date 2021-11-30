@@ -51,11 +51,7 @@ Observações:
 - Somente chamadas brasileiras. Omita o `+55`
 - A função de SMS é _alpha_. Por enquanto, funciona somente para o número cadastrado
 
-A vítima receberá uma ligação e, quando atender, ouvirá o delicioso gemido do zap!
-
-### Cadê o áudio?
-
-O arquivo encontra-se [neste link](http://prtnsrc.com/2545.mp3). Abra por sua conta e risco!
+A pessoa receberá uma ligação e, quando atender, ouvirá o áudio!
 
 ## Docker
 
@@ -68,13 +64,14 @@ $ docker build -t wgo-desafio -f Dockerfile .
 $ docker run --rm --name wgo-desafio -e DE={{telefone}} -e PARA={{telefone}} -e TOKEN={{token}} wgo-desafio
 ```
 
+## Quem vence o desafio?
 
-## Por quê!?
+A primeira pessoa que fizer uma ligação para seu próprio celular, através dessa aplicação, vence o desafio!
+Tem que abrir a câmera e o áudio na reunião, colocar o celular no viva voz e mostrar a chamada do celular, com o áudio tocando. :) 
 
-Porque somos brasileiros!
+Fechou? Valendo!!
 
-![6096234_700b](https://user-images.githubusercontent.com/1585655/29083653-d40bb660-7c3f-11e7-896c-efd243f32918.jpg)
 ## Disclaimer
 
-Os autores deste projeto não possuem qualquer ligação com a TotalVoice.
-TotalVoice é uma marca registrada.
+Os autores deste projeto não possuem qualquer ligação com a TotalVoice. TotalVoice é uma marca registrada.
+Não usar essa aplicação para fins comerciais ou para perturbar amiguinho(a)s. :)
