@@ -1,6 +1,6 @@
 FROM node:boron
 
-RUN npm install -g gemidao-do-zap
+RUN npm install -g wgo-desafio
 
 COPY entrypoint.sh /
 RUN chmod +x /entrypoint.sh

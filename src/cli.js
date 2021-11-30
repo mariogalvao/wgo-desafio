@@ -17,7 +17,7 @@ function cli(args) {
 }
 
 cli(yargs
-    .usage('Uso: gemidao-do-zap --de=<de> --para=<para>')
+    .usage('Uso: wgo-desafio --de=<de> --para=<para>')
     .option('token', {
         describe: 'Token do TotalVoice',
         type: 'string'

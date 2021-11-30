@@ -1,12 +1,12 @@
 {
-  "name": "gemidao-do-zap",
+  "name": "wgo-desafio",
   "version": "0.1.2",
   "description": "Uma aplicação de linha de comando que liga para alguém tocando o gemidão do Zap",
   "bin": {
-    "gemidao-do-zap": "./dist/cli.js"
+    "wgo-desafio": "./dist/cli.js"
   },
   "main": "dist/index.js",
-  "repository": "https://github.com/haskellcamargo/gemidao-do-zap.git",
+  "repository": "https://github.com/haskellcamargo/wgo-desafio.git",
   "author": "Marcelo Camargo <marcelocamargo@linuxmail.org>",
   "license": "MIT",
   "scripts": {

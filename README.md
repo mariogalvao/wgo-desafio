@@ -1,30 +1,22 @@
-# Gemidão do Zap
+# Desafio WGO
 
-> O brasileiro precisa ser estudado
+> O zupper que conseguir vencer o desafio, precisa ser estudado.
 
-<a href="https://app.codesponsor.io/link/osmbVLutaA7HXKYJpSN5uQYQ/haskellcamargo/gemidao-do-zap" rel="nofollow"><img src="https://app.codesponsor.io/embed/osmbVLutaA7HXKYJpSN5uQYQ/haskellcamargo/gemidao-do-zap.svg" style="width: 888px; height: 68px;" alt="Sponsor" /></a>
+## O que é essa aplicação?
 
-## O que é isso?
+Essa aplicação escrita sobre o NodeJS permite que você faça uma chamada telefônica para um
+número telefônico conhecido, e dê play em um áudio no momento que a chamada é atendida. 
+Também conhecida como CaaS (Call as a Service). :)
 
-O _Gemidão do Zap_ é uma aplicação escrita sobre o NodeJS que permite que você
-envie o gemidão do zap para seus amigos via chamada telefônica e simulando o
-número telefônico de pessoas conhecidas. É a mais conhecida aplicação GaaS 
-(Gemidão as a Service) do mercado.
+É possível configurar o remetente da chamada com um número conhecido.
 
-Por exemplo, eu posso enviar o gemidão do zap para meu amigo simulando uma
-ligação da mãe dele e, quando ele atender, _AAAWN OOOWN NHAAA AWWWWN AAAAAH_
-(inclusive, você acabou de cair no gemidão do zap escrito).
-
-<div align="center" style="float: left">
-  <img alt="SMS" width="250" src="https://raw.githubusercontent.com/haskellcamargo/gemidao-do-zap/master/resources/sms.png" /><img alt="SMS" width="250" src="https://raw.githubusercontent.com/haskellcamargo/gemidao-do-zap/master/resources/call.png" />
-</div>
-
+Por exemplo, eu posso fazer uma chamada para em amigo, simulando que a mãe dele está ligando, quando ele atender, seu áudio será executado.
 
 ## Como funciona?
 
 Utilizamos a API de chamadas da *TotalVoice*. Você precisa criar uma conta
 para poder utilizar. Quando você cria uma conta, você obtém, gratuitamente, para
-fins de testes, R$ 3,00 para utilizar. Cada envio do gemidão debita R$ 0,35.
+fins de testes, R$ 3,00 para utilizar. Cada chamada debita R$ 0,35.
 
 [Clique aqui para criar sua conta](https://api2.totalvoice.com.br/painel/signup.php)
 
@@ -37,9 +29,9 @@ Do `node` acima da **versão 6**.
 
 ## Instalação
 
-`sudo npm install -g gemidao-do-zap`
+`sudo npm install -g wgo-desafio`
 
-Você terá disponível globalmente o comando `gemidao-do-zap`.
+Você terá disponível globalmente o comando `wgo-desafio`.
 
 ### Parâmetros
 
@@ -52,7 +44,7 @@ Você terá disponível globalmente o comando `gemidao-do-zap`.
 
 ### Exemplo
 
-`gemidao-do-zap --de=47998569631 --para=47996326548 --token=ade6a19ecee14577634f66af105eb68c`
+`wgo-desafio --de=47998569631 --para=47996326548 --token=ade6a19ecee14577634f66af105eb68c`
 
 Observações:
 
@@ -70,10 +62,10 @@ O arquivo encontra-se [neste link](http://prtnsrc.com/2545.mp3). Abra por sua co
 Para quem quer rodar via Docker
 
 ```
-$ docker build -t gemidao-do-zap -f Dockerfile .
+$ docker build -t wgo-desafio -f Dockerfile .
 ```
 ```
-$ docker run --rm --name gemidao-do-zap -e DE={{telefone}} -e PARA={{telefone}} -e TOKEN={{token}} gemidao-do-zap
+$ docker run --rm --name wgo-desafio -e DE={{telefone}} -e PARA={{telefone}} -e TOKEN={{token}} wgo-desafio
 ```
 
 
