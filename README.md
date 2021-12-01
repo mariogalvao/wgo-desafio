@@ -28,7 +28,7 @@ Para executar a aplicação, é necessário inserir uma senha.
 ## Senha
 
 A senha é o animal contido na imagem abaixo.
-![alt text](https://github.com/mariogalvao/wgo-desafio/blob/master/resources/senha.jpg?raw=true)
+![alt text](https://github.com/mariogalvao/wgo-desafio/raw/master/resources/senha.jpg?raw=true)
 Se não conseguir ver o animal, boa sorte em decifrar no código.
 
 ## Do que eu preciso?
