@@ -48,8 +48,8 @@ Você terá disponível globalmente o comando `wgo-desafio`.
 | Parâmetro | Obrigatório        | Descrição                                                 |
 |-----------|--------------------|-----------------------------------------------------------|
 | `--token` | :white_check_mark: | Seu token de acesso do TotalVoice.                        |
-| `--de`    |                    | Quem está enviando o gemidão? Qualquer número telefônico! |
-| `--para`  | :white_check_mark: | Quem é a vítima do gemidão do zap?                        |
+| `--de`    |                    | Quem está enviando o áudio? Qualquer número telefônico! |
+| `--para`  | :white_check_mark: | Quem é a vítima?                        |
 | `--sms`   |                    | Se definido, será enviado um SMS ao invés de uma chamada. |
 | `--senha` | :white_check_mark: | Digite, em letras minúsculas, o animal contido na imagem. |
 
