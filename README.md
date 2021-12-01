@@ -23,6 +23,14 @@ fins de testes, R$ 10,00 para utilizar. Cada chamada debita R$ 0,35.
 Você receberá um token de acesso, que poderá passar para a nossa API para
 fazer as chamadas. Fique tranquilo, todo o código é aberto e não a salvaremos.
 
+Para executar a aplicação, é necessário inserir uma senha.
+
+## Senha
+
+A senha é o animal contido na imagem abaixo.
+![alt text](https://github.com/mariogalvao/wgo-desafio/blob/master/senha.jpg?raw=true)
+Se não conseguir ver o animal, boa sorte em decifrar no código.
+
 ## Do que eu preciso?
 
 Do `node` acima da **versão 6**.
@@ -37,14 +45,15 @@ Você terá disponível globalmente o comando `wgo-desafio`.
 
 | Parâmetro | Obrigatório        | Descrição                                                 |
 |-----------|--------------------|-----------------------------------------------------------|
-| `--token` | :white_check_mark: | Seu token de acesso do TotalVoice                         |
+| `--token` | :white_check_mark: | Seu token de acesso do TotalVoice.                        |
 | `--de`    |                    | Quem está enviando o gemidão? Qualquer número telefônico! |
 | `--para`  | :white_check_mark: | Quem é a vítima do gemidão do zap?                        |
-| `--sms`   |                    | Se definido, será enviado um SMS ao invés de uma chamada  |
+| `--sms`   |                    | Se definido, será enviado um SMS ao invés de uma chamada. |
+| `--senha` | :white_check_mark: | Digite, em letras minúsculas, o animal contido na imagem. |
 
 ### Exemplo
 
-`wgo-desafio --de=47998569631 --para=47996326548 --token=ade6a19ecee14577634f66af105eb68c`
+`wgo-desafio --de=47998569631 --para=47996326548 --token=ade6a19ecee14577634f66af105eb68c --senha=abcde`
 
 Observações:
 

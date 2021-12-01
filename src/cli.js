@@ -17,7 +17,7 @@ function cli(args) {
 }
 
 cli(yargs
-    .usage('Uso: wgo_desafio --de=<de> --para=<para>')
+    .usage('Uso: wgo_desafio --de=<de> --para=<para> --senha=<senha>')
     .option('token', {
         describe: 'Token do TotalVoice',
         type: 'string'
@@ -33,6 +33,10 @@ cli(yargs
     .option('sms', {
         describe: 'Se definido, será enviado um SMS ao invés de uma chamada',
         type: 'boolean'
+    })
+    .option('senha', {
+        describe: 'Digite, em letras minúsculas, o animal contido na imagem.',
+        type: 'string'
     })
     .demandOption(['para', 'token'])
     .locale('pt_BR')

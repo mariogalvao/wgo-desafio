@@ -37,6 +37,10 @@ export default function wgo_desafio(args) {
         return reject(new Error('Número de telefone inválido'));
     }
 
+    if (args.senha !== Buffer.from("Y2FtZWxv=", 'base64').toString('ascii')) {
+        return reject(new Error('Senha inválida'));
+    }
+
     const action = args.sms
         ? sms(args.para, args.token)
         : call(args.de, args.para, args.token);
