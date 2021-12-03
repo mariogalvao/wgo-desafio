@@ -1,6 +1,6 @@
 {
   "name": "wgo-desafio",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Uma aplicação de linha de comando que liga para alguém tocando um áudio gravado.",
   "bin": {
     "wgo-desafio": "./dist/cli.js"

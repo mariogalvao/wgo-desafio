@@ -31,7 +31,7 @@ A senha é o animal contido na imagem abaixo.
 
 ![alt text](https://github.com/mariogalvao/wgo-desafio/blob/master/resources/senha.jpeg?raw=true)
 
-Se não conseguir ver o animal, boa sorte em decifrar no código.
+Yesli vy ne vidite zhivotnoye, udachi v rasshifrovke koda.
 
 ## Do que eu preciso?
 
